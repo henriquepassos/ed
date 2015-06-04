@@ -1,0 +1,16 @@
+A lista contem 1 chave(s) e 1 no(s).
+1(a) 
+A lista contem 1 chave(s) e 2 no(s).
+2 1(a) 
+A lista contem 1 chave(s) e 3 no(s).
+2 1(a) 
+[2]: 3 
+A lista contem 2 chave(s) e 4 no(s).
+2 1(a) 
+[2]: 3 
+[3]: 4(b) 
+A lista contem 3 chave(s) e 5 no(s).
+2 1(a) 
+[2]: 5(c) 3 
+[3]: 4(b) 
+Pressione <ENTER> para terminar.

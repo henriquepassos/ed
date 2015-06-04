@@ -1,0 +1,10 @@
+1. Peso: 80, Altura 185.
+   Peso antigo: 80, Peso novo 75.
+2. Peso: 80, Altura 185.
+   Peso antigo: 80, Peso novo 75.
+3. Peso: 75, Altura 185.
+   Peso antigo: 75, Peso novo 70.
+4. Peso: 75, Altura 185.
+5. Peso: 75, Altura 185.
+6. Peso: 70, Altura 185.
+7. Peso: 75, Altura 185.

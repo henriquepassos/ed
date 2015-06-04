@@ -1,0 +1,8 @@
+Numero de Nos: 3.
+Altura: 3.
+Numero de Nos: 7.
+Altura: 5.
+Numero de Nos: 10.
+Altura: 7.
+a(b(e(f(g()))c(d(h(i(j()))))))
+Pressione <ENTER> para terminar.

@@ -1,0 +1,2 @@
+a(b(efg)cd(h(ij)))
+Pressione <ENTER> para terminar.

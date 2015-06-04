@@ -1,0 +1,4 @@
+Peso: 80, Altura 185.
+Peso: 70, Altura 170.
+Peso: 0, Altura 170.
+ 

@@ -1,0 +1,82 @@
+Comandos validos: 
+   i <chave1>: inserir elemento com chave=chave1 no topo da pilha
+   e : excluir o topo da pilha
+   p : imprimir pilha
+   d : destruir (zerar) pilha
+   l : exibir log de utilizacao da pilha
+   h : exibir esta mensagem de ajuda
+   0 : exibir a chave e o endereco do topo da pilha
+Pilha: " "
+Numero de elementos na pilha: 0.
+Tamanho da pilha (em bytes): 204.
+Elemento 9 inserido corretamente.
+Elemento 3 inserido corretamente.
+Elemento 4 inserido corretamente.
+Elemento 1 inserido corretamente.
+Elemento 5 inserido corretamente.
+Pilha: " 5 1 4 3 9 "
+Numero de elementos na pilha: 5.
+Tamanho da pilha (em bytes): 204.
+Elemento 11 inserido corretamente.
+Elemento 12 inserido corretamente.
+Elemento 13 inserido corretamente.
+Elemento 14 inserido corretamente.
+Elemento 15 inserido corretamente.
+Elemento 16 inserido corretamente.
+Elemento 17 inserido corretamente.
+Elemento 18 inserido corretamente.
+Elemento 19 inserido corretamente.
+Elemento 20 inserido corretamente.
+Elemento 21 inserido corretamente.
+Elemento 22 inserido corretamente.
+Elemento 23 inserido corretamente.
+Elemento 24 inserido corretamente.
+Elemento 25 inserido corretamente.
+Elemento 26 inserido corretamente.
+Elemento 27 inserido corretamente.
+Elemento 28 inserido corretamente.
+Elemento 29 inserido corretamente.
+Elemento 30 inserido corretamente.
+Elemento 31 inserido corretamente.
+Elemento 32 inserido corretamente.
+Elemento 33 inserido corretamente.
+Elemento 34 inserido corretamente.
+Elemento 35 inserido corretamente.
+Elemento 36 inserido corretamente.
+Elemento 37 inserido corretamente.
+Elemento 38 inserido corretamente.
+Elemento 39 inserido corretamente.
+Elemento 40 inserido corretamente.
+Elemento 41 inserido corretamente.
+Elemento 42 inserido corretamente.
+Elemento 43 inserido corretamente.
+Elemento 44 inserido corretamente.
+Elemento 45 inserido corretamente.
+Elemento 46 inserido corretamente.
+Elemento 47 inserido corretamente.
+Elemento 48 inserido corretamente.
+Elemento 49 inserido corretamente.
+Elemento 50 inserido corretamente.
+Elemento 51 inserido corretamente.
+Elemento 52 inserido corretamente.
+Elemento 53 inserido corretamente.
+Elemento 54 inserido corretamente.
+Elemento 55 inserido corretamente.
+Nao foi possivel inserir elemento 56.
+Nao foi possivel inserir elemento 57.
+Nao foi possivel inserir elemento 58.
+Nao foi possivel inserir elemento 59.
+Pilha: " 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 5 1 4 3 9 "
+Numero de elementos na pilha: 50.
+Tamanho da pilha (em bytes): 204.
+Elemento 55 excluido corretamente.
+Elemento 54 excluido corretamente.
+Elemento 53 excluido corretamente.
+Elemento 52 excluido corretamente.
+Pilha: " 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 5 1 4 3 9 "
+Numero de elementos na pilha: 46.
+Tamanho da pilha (em bytes): 204.
+Pilha zerada.
+Pilha: " "
+Numero de elementos na pilha: 0.
+Tamanho da pilha (em bytes): 204.

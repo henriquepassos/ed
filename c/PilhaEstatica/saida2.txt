@@ -1,0 +1,27 @@
+Comandos validos: 
+   i <chave1>: inserir elemento com chave=chave1 no topo da pilha
+   e : excluir o topo da pilha
+   p : imprimir pilha
+   d : destruir (zerar) pilha
+   l : exibir log de utilizacao da pilha
+   h : exibir esta mensagem de ajuda
+   0 : exibir a chave e o endereco do topo da pilha
+Pilha: " "
+Numero de elementos na pilha: 0.
+Tamanho da pilha (em bytes): 204.
+Elemento 9 inserido corretamente.
+Elemento 3 inserido corretamente.
+Elemento 4 inserido corretamente.
+Elemento 1 inserido corretamente.
+Elemento 5 inserido corretamente.
+Pilha: " 5 1 4 3 9 "
+Numero de elementos na pilha: 5.
+Tamanho da pilha (em bytes): 204.
+Primeiro elemento 5 encontrado no endereco 4.
+Elemento 5 excluido corretamente.
+Pilha: " 1 4 3 9 "
+Numero de elementos na pilha: 4.
+Tamanho da pilha (em bytes): 204.
+Pilha zerada.
+Numero de elementos na pilha: 0.
+Tamanho da pilha (em bytes): 204.

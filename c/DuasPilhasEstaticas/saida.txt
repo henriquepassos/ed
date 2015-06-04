@@ -1,0 +1,101 @@
+Comandos validos: 
+   i <chave1>: inserir elemento com chave=chave1, na pilha 1
+   j <chave1>: inserir elemento com chave=chave1, na pilha 2
+   e : excluir elemento com chave=chave1, na pilha 1
+   f : excluir elemento com chave=chave1, na pilha 2
+   o : imprimir pilha 1
+   p : imprimir pilha 2
+   d : destruir (zerar) lista
+   l : exibir log de utilizacao do pilha
+   h : exibir esta mensagem de ajuda
+   1 : exibir a chave e o endereco do topo, pilha 1
+   2 : exibir a chave e o endereco do topo, pilha 2
+Pilha 1: " "
+Pilha 2: " "
+Numero de elementos na pilha 1: 0.
+Numero de elementos na pilha 1: 0.
+Tamanho do pilha (em bytes): 208.
+Elemento 1 inserido corretamente na pilha 1.
+Elemento 2 inserido corretamente na pilha 1.
+Elemento 3 inserido corretamente na pilha 1.
+Elemento 4 inserido corretamente na pilha 1.
+Elemento 5 inserido corretamente na pilha 1.
+Pilha 1: " 5 4 3 2 1 "
+Pilha 2: " "
+Numero de elementos na pilha 1: 5.
+Numero de elementos na pilha 1: 0.
+Tamanho do pilha (em bytes): 208.
+Elemento 11 inserido corretamente na pilha 1.
+Elemento 12 inserido corretamente na pilha 1.
+Elemento 13 inserido corretamente na pilha 1.
+Elemento 14 inserido corretamente na pilha 1.
+Elemento 15 inserido corretamente na pilha 1.
+Elemento 16 inserido corretamente na pilha 1.
+Elemento 17 inserido corretamente na pilha 1.
+Elemento 18 inserido corretamente na pilha 1.
+Elemento 19 inserido corretamente na pilha 1.
+Elemento 20 inserido corretamente na pilha 1.
+Elemento 21 inserido corretamente na pilha 1.
+Elemento 22 inserido corretamente na pilha 1.
+Elemento 23 inserido corretamente na pilha 1.
+Elemento 24 inserido corretamente na pilha 1.
+Elemento 25 inserido corretamente na pilha 1.
+Elemento 26 inserido corretamente na pilha 1.
+Elemento 27 inserido corretamente na pilha 1.
+Elemento 28 inserido corretamente na pilha 1.
+Elemento 29 inserido corretamente na pilha 1.
+Elemento 30 inserido corretamente na pilha 1.
+Elemento 31 inserido corretamente na pilha 1.
+Elemento 32 inserido corretamente na pilha 1.
+Elemento 33 inserido corretamente na pilha 1.
+Elemento 34 inserido corretamente na pilha 1.
+Elemento 35 inserido corretamente na pilha 1.
+Elemento 36 inserido corretamente na pilha 1.
+Elemento 37 inserido corretamente na pilha 1.
+Elemento 38 inserido corretamente na pilha 1.
+Elemento 39 inserido corretamente na pilha 1.
+Elemento 40 inserido corretamente na pilha 1.
+Elemento 41 inserido corretamente na pilha 1.
+Elemento 42 inserido corretamente na pilha 1.
+Elemento 43 inserido corretamente na pilha 1.
+Elemento 44 inserido corretamente na pilha 1.
+Elemento 45 inserido corretamente na pilha 1.
+Elemento 46 inserido corretamente na pilha 1.
+Elemento 47 inserido corretamente na pilha 1.
+Primeiro elemento pilha 1: 47 encontrado no endereco 41.
+Primeiro elemento pilha 2: 47 encontrado no endereco 41.
+Elemento 48 inserido corretamente na pilha 1.
+Elemento 49 inserido corretamente na pilha 1.
+Elemento 50 inserido corretamente na pilha 2.
+Elemento 51 inserido corretamente na pilha 2.
+Elemento 52 inserido corretamente na pilha 2.
+Elemento 53 inserido corretamente na pilha 2.
+Elemento 54 inserido corretamente na pilha 2.
+Elemento 55 inserido corretamente na pilha 2.
+Nao foi possivel inserir elemento 56.
+Nao foi possivel inserir elemento 57.
+Nao foi possivel inserir elemento 58.
+Nao foi possivel inserir elemento 59.
+Pilha 1: " 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 5 4 3 2 1 "
+Pilha 2: " 55 54 53 52 51 50 "
+Numero de elementos na pilha 1: 44.
+Numero de elementos na pilha 1: 6.
+Tamanho do pilha (em bytes): 208.
+Primeiro elemento pilha 1: 49 encontrado no endereco 43.
+Primeiro elemento pilha 2: 49 encontrado no endereco 43.
+Elemento 49 excluido corretamente da pilha 1.
+Elemento 55 excluido corretamente da pilha 2.
+Primeiro elemento pilha 1: 54 encontrado no endereco 45.
+Primeiro elemento pilha 2: 54 encontrado no endereco 45.
+Elemento 54 excluido corretamente da pilha 1.
+Elemento 55 excluido corretamente da pilha 2.
+Pilha 2: " 55 54 53 52 51 50 "
+Numero de elementos na pilha 1: 46.
+Numero de elementos na pilha 1: 6.
+Tamanho do pilha (em bytes): 208.
+Pilhas zeradas.
+Pilha 1: " "
+Pilha 2: " "
+Numero de elementos na pilha 1: 0.
+Numero de elementos na pilha 1: 0.
+Tamanho do pilha (em bytes): 208.

@@ -1,0 +1,42 @@
+Comandos validos: 
+   i <chave1>: inserir elemento com chave=chave1
+   d : destruir (zerar) NO
+   h : exibir esta mensagem de ajuda
+   b <chave1>: exibir endereco do elemento com chave=chave1
+   0 : exibir arvore EM ordem.
+   1 : exibir arvore PRE-ordem.
+   2 : exibir arvore POS-ordem.
+   3 : exibir arvore parenteses.
+   9: verifica se arvore eh AVL.
+Elemento 1 inserido corretamente.
+Elemento 2 inserido corretamente.
+Rotacao a direita
+Elemento 3 inserido corretamente.
+Em ordem: 1 2 3 
+Pre ordem: 2 1 3 
+Arvore eh AVL.
+Arvore zerada (toda memoria liberada).
+Elemento 3 inserido corretamente.
+Elemento 2 inserido corretamente.
+Rotacao a esquerda
+Elemento 1 inserido corretamente.
+Em ordem: 1 2 3 
+Pre ordem: 2 1 3 
+Arvore eh AVL.
+Arvore zerada (toda memoria liberada).
+Elemento 5 inserido corretamente.
+Elemento 1 inserido corretamente.
+Rotacao a esquerda
+Elemento 3 inserido corretamente.
+Em ordem: 1 3 5 
+Pre ordem: 3 1 5 
+Arvore eh AVL.
+Arvore zerada (toda memoria liberada).
+Elemento 5 inserido corretamente.
+Elemento 9 inserido corretamente.
+Rotacao a direita
+Elemento 7 inserido corretamente.
+Em ordem: 5 7 9 
+Pre ordem: 7 5 9 
+Arvore eh AVL.
+Arvore zerada (toda memoria liberada).

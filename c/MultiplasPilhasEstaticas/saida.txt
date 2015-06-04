@@ -1,0 +1,112 @@
+Comandos validos: 
+   i <pilha_><chave_>: inserir elemento com chave=chave_, na pilha=pilha_
+   e <pilha_>: excluir elemento da pilha=pilha_
+   d : destruir (zerar) pilhas
+   l : exibir log de utilizacao do pilha
+   h : exibir esta mensagem de ajuda
+   p <pilha_>: exibir a chave e o endereco do topo, pilha=pilha_
+Numero de elementos nas pilhas: 0.
+Tamanho da pilha (em bytes): 248.
+Elemento 1 inserido corretamente na pilha 1.
+Elemento 1 inserido corretamente na pilha 2.
+Elemento 2 inserido corretamente na pilha 3.
+Elemento 0 inserido corretamente na pilha 4.
+Elemento 4 inserido corretamente na pilha 4.
+Nao foi possivel encontrar o topo da pilha 0 (pilha vazia).
+Topo da pilha 1: 1 encontrado no endereco 10.
+Topo da pilha 2: 1 encontrado no endereco 20.
+Topo da pilha 3: 2 encontrado no endereco 30.
+Topo da pilha 4: 4 encontrado no endereco 41.
+Numero de elementos nas pilhas: 5.
+Tamanho da pilha (em bytes): 248.
+Elemento 11 inserido corretamente na pilha 2.
+Elemento 12 inserido corretamente na pilha 3.
+Elemento 13 inserido corretamente na pilha 4.
+Elemento 14 inserido corretamente na pilha 0.
+Numero de elementos nas pilhas: 9.
+Tamanho da pilha (em bytes): 248.
+Topo da pilha 0: 14 encontrado no endereco 0.
+Topo da pilha 1: 1 encontrado no endereco 10.
+Topo da pilha 2: 11 encontrado no endereco 21.
+Topo da pilha 3: 12 encontrado no endereco 31.
+Topo da pilha 4: 13 encontrado no endereco 42.
+Elemento 15 inserido corretamente na pilha 1.
+Elemento 16 inserido corretamente na pilha 1.
+Elemento 17 inserido corretamente na pilha 1.
+Elemento 18 inserido corretamente na pilha 1.
+Elemento 19 inserido corretamente na pilha 1.
+Elemento 20 inserido corretamente na pilha 1.
+Elemento 21 inserido corretamente na pilha 1.
+Elemento 22 inserido corretamente na pilha 1.
+Elemento 23 inserido corretamente na pilha 1.
+Elemento 24 inserido corretamente na pilha 1.
+Elemento 25 inserido corretamente na pilha 1.
+Elemento 26 inserido corretamente na pilha 1.
+Elemento 27 inserido corretamente na pilha 1.
+Elemento 28 inserido corretamente na pilha 1.
+Elemento 29 inserido corretamente na pilha 1.
+Elemento 30 inserido corretamente na pilha 1.
+Elemento 31 inserido corretamente na pilha 1.
+Elemento 32 inserido corretamente na pilha 1.
+Elemento 33 inserido corretamente na pilha 1.
+Elemento 34 inserido corretamente na pilha 1.
+Elemento 35 inserido corretamente na pilha 1.
+Elemento 36 inserido corretamente na pilha 1.
+Elemento 37 inserido corretamente na pilha 1.
+Elemento 38 inserido corretamente na pilha 1.
+Elemento 39 inserido corretamente na pilha 1.
+Elemento 40 inserido corretamente na pilha 1.
+Elemento 41 inserido corretamente na pilha 1.
+Elemento 42 inserido corretamente na pilha 1.
+Elemento 43 inserido corretamente na pilha 1.
+Elemento 44 inserido corretamente na pilha 1.
+Elemento 45 inserido corretamente na pilha 1.
+Elemento 46 inserido corretamente na pilha 1.
+Elemento 47 inserido corretamente na pilha 1.
+Elemento 48 inserido corretamente na pilha 1.
+Elemento 49 inserido corretamente na pilha 1.
+Elemento 50 inserido corretamente na pilha 1.
+Elemento 51 inserido corretamente na pilha 1.
+Elemento 52 inserido corretamente na pilha 1.
+Elemento 53 inserido corretamente na pilha 1.
+Elemento 54 inserido corretamente na pilha 1.
+Numero de elementos nas pilhas: 49.
+Tamanho da pilha (em bytes): 248.
+Topo da pilha 0: 14 encontrado no endereco 0.
+Topo da pilha 1: 54 encontrado no endereco 42.
+Topo da pilha 2: 11 encontrado no endereco 44.
+Topo da pilha 3: 12 encontrado no endereco 46.
+Topo da pilha 4: 13 encontrado no endereco 49.
+Elemento 55 inserido corretamente na pilha 1.
+Numero de elementos nas pilhas: 50.
+Tamanho da pilha (em bytes): 248.
+Topo da pilha 0: 14 encontrado no endereco 0.
+Topo da pilha 1: 55 encontrado no endereco 42.
+Topo da pilha 2: 11 encontrado no endereco 44.
+Topo da pilha 3: 12 encontrado no endereco 46.
+Topo da pilha 4: 13 encontrado no endereco 49.
+Nao foi possivel inserir elemento 56 na pilha 1.
+Nao foi possivel inserir elemento 57 na pilha 1.
+Nao foi possivel inserir elemento 58 na pilha 1.
+Nao foi possivel inserir elemento 59 na pilha 1.
+Nao foi possivel inserir elemento 60 na pilha 1.
+Numero de elementos nas pilhas: 50.
+Tamanho da pilha (em bytes): 248.
+Topo da pilha 0: 14 encontrado no endereco 0.
+Topo da pilha 1: 55 encontrado no endereco 42.
+Topo da pilha 2: 11 encontrado no endereco 44.
+Topo da pilha 3: 12 encontrado no endereco 46.
+Topo da pilha 4: 13 encontrado no endereco 49.
+Elemento 14 excluido corretamente da pilha 0.
+Elemento 55 excluido corretamente da pilha 1.
+Elemento 11 excluido corretamente da pilha 2.
+Elemento 12 excluido corretamente da pilha 3.
+Elemento 13 excluido corretamente da pilha 4.
+Nao foi possivel encontrar o topo da pilha 0 (pilha vazia).
+Topo da pilha 1: 54 encontrado no endereco 41.
+Topo da pilha 2: 1 encontrado no endereco 43.
+Topo da pilha 3: 2 encontrado no endereco 45.
+Topo da pilha 4: 4 encontrado no endereco 48.
+Pilhas zeradas.
+Numero de elementos nas pilhas: 0.
+Tamanho da pilha (em bytes): 248.

@@ -1,0 +1,27 @@
+Comandos validos: 
+   i <chave1>: inserir elemento com chave=chave1 no final da fila
+   e : excluir o 1o elemento da fila
+   p : imprimir fila
+   d : destruir (zerar) fila
+   l : exibir log de utilizacao da fila
+   h : exibir esta mensagem de ajuda
+   0 : exibir a chave e o endereco do primeiro elemento
+Fila: " "
+Numero de elementos na fila: 0.
+Tamanho da fila (em bytes): 208.
+Elemento 9 inserido corretamente.
+Elemento 3 inserido corretamente.
+Elemento 4 inserido corretamente.
+Elemento 1 inserido corretamente.
+Elemento 5 inserido corretamente.
+Fila: " 9 3 4 1 5 "
+Numero de elementos na fila: 5.
+Tamanho da fila (em bytes): 208.
+Primeiro elemento 9 encontrado no endereco 0.
+Elemento 9 excluido corretamente.
+Fila: " 3 4 1 5 "
+Numero de elementos na fila: 4.
+Tamanho da fila (em bytes): 208.
+Fila zerada.
+Numero de elementos na fila: 0.
+Tamanho da fila (em bytes): 208.
