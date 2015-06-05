@@ -62,9 +62,10 @@ public class CaixeiroViajante {
             return;
         }
         if (i == g.adjacente.length) {
-            if (c.matrizDistancia[c.tempSolucao[i - 1]][c.tempSolucao[0]] < INF) {
-                System.out.println("\t" + c.valorMelhorSolucao + " -> " + c.valorSolucaoAtual);
-                c.valorMelhorSolucao = c.valorSolucaoAtual;
+            int dist = c.matrizDistancia[c.tempSolucao[i - 1]][c.tempSolucao[0]];
+            if (dist < INF && c.valorSolucaoAtual + dist < c.valorMelhorSolucao) {
+                System.out.println("\t" + c.valorMelhorSolucao + " -> " + (c.valorSolucaoAtual + dist));
+                c.valorMelhorSolucao = c.valorSolucaoAtual + dist;
                 c.melhorSolucao = c.tempSolucao.clone();
             }
             return;
