@@ -15,7 +15,10 @@ public class GrafoConexoMatriz {
     static boolean[] adjacente = new boolean[ma.length];
 
     public static void main(String[] args) {
-        System.out.println(analisaCompMatrizAdjancia());
+        LinkedList<Integer> list = analisaCompMatrizAdjancia();
+        for (int i = 0; i < list.size(); i++) {
+            System.out.printf("%d -> %d\n", i + 1, list.get(i));
+        }
     }
 
     static LinkedList<Integer> analisaCompMatrizAdjancia() {
