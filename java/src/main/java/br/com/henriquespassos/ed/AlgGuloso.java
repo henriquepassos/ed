@@ -27,6 +27,6 @@ public class AlgGuloso {
 
     public static void main(String[] args) {
         int total = selecaoGulosa(inicio, fim, numeroDeAtividades);
-        System.out.println("Foram selecionadas " + total + "atividades.");
+        System.out.println("Foram selecionadas " + total + " atividades.");
     }
 }
