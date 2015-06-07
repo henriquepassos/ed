@@ -52,22 +52,55 @@ public class Hamiltoniano {
     }
 
     private static boolean cicloHamiltonianoAux(Grafo g, No[] solucao, int i) {
+        // 9) so entro nesse if se minha solucao estiver completa
         if (i == g.adjacente.length) {
+            // 10) aqui nesse exato momento eu tenho um caminho hamiltoniano
+            //     onde NO SOLUCAO[i] e VIZINHO do NO SOLUCAO[i + 1]
+            //     e nao existe repeticao
+            //     agora para eu saber se isso e um ciclo hamiltoniano
+            //     preciso ver se o ultimo NO SOLUCAO[i - 1] e vizinho do
+            //     NO SOLUCAO[0]
             for (No t : solucao[i - 1].vizinho) {
+                // 11) deixa eu ver se ha um NO VIZINHO do ultimo
+                //     NO da SOLUCAO[i - 1] que e o NO inicial SOLUCAO[0]
                 if (t == solucao[0]) {
+                    // 12) achei corre para o abraco
                     return true;
                 }
             }
+            // 13) foi por pouco, achei uma caminho hamiltoniano
+            //     que nao forma um ciclo hamiltoniano
             return false;
         }
+        // 1) deixa eu acessar todos os NOS VIZINHOS
+        //    do ultimo NO que eu adicioneu na SOLUCAO
+        //    atraves da sua lista de adjacencias
         for (No t : solucao[i - 1].vizinho) {
+            // 2) vou apenas confirmar se esse NO VIZINHO
+            //    ja nao foi VISITADO
             if (!t.visitado) {
+                // 3) se esse NO VIZINHO nao foi VISITADO
+                //    marco como VISITADO
                 t.visitado = true;
+                // 4) e adiciono da SOLUCAO
                 solucao[i] = t;
-                if (cicloHamiltonianoAux(g, solucao, i + 1)) return true;
+                // 5) vou tentar encontrar um NO VIZINHO
+                //    do ultimo NO adicionado na solucao do passo "4)"
+                //    que faca um caminho nao VISITADO
+                if (cicloHamiltonianoAux(g, solucao, i + 1))
+                    // 6) se recursivamente eu achei esse caminho
+                    //    digo que existem um caminho que passe por
+                    //    todos os NOS do grafo sem repeticao
+                    return true;
+                // 7) caso contrario esse caminho nao foi uma boa
+                //    vamos marcar como nao VISITADO e tentar o proximo
+                //    NO "No t" do laco for
                 t.visitado = false;
             }
         }
+
+        // 8) ja visitei todos os vizinhos do NO SOLUCAO[i - 1]
+        //    por aqui o caminho nao deu certo
         return false;
     }
 }
