@@ -53,11 +53,18 @@ public class GrafoConexoArranjo {
     }
 
     public LinkedList<Integer> visitarViz(No[] nos) {
+        // vou utilizar uma lista para adicionar
+        // o tamanho de cada componente conexo (tamanho == quantidade de NOS)
         LinkedList<Integer> list = new LinkedList<Integer>();
+        // vou visitar todos os NOS
         for (No t : nos) {
+            // todos nao so os NOS nao VISITADOS ainda
             if (!t.visitado) {
+                // marcar como VISITADO
                 t.visitado = true;
+                // vou visitar recursivamente todos os possiveis VIZINHOS dos VIZINHOS
                 int v = visitadoVizinhos(t);
+                // adiciono a quantidade de componentes para esse componente conexo
                 list.add(v);
             }
         }
@@ -67,8 +74,13 @@ public class GrafoConexoArranjo {
     public int visitadoVizinhos(No atual) {
         int cont = 1;
         atual.visitado = true;
+        // vou visitar todos os NOS
         for (No t : atual.vizinho) {
+            // todos nao so os NOS nao VISITADOS ainda
             if (!t.visitado) {
+                // marcar como VISITADO
+                t.visitado = true;
+                // vou visitar recursivamente todos os possiveis VIZINHOS dos VIZINHOS
                 cont += visitadoVizinhos(t);
             }
         }

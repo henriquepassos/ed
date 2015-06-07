@@ -22,10 +22,16 @@ public class GrafoConexoMatriz {
     }
 
     static LinkedList<Integer> analisaCompMatrizAdjancia() {
+        // vou utilizar uma lista para adicionar
+        // o tamanho de cada componente conexo (tamanho == quantidade de NOS)
         LinkedList<Integer> list = new LinkedList<Integer>();
+        // vou visitar todos os NOS
         for (int i = 0; i < ma.length; i++) {
+            // todos nao so os NOS nao VISITADOS ainda
             if (!adjacente[i]) {
+                // marcar como VISITADO
                 adjacente[i] = true;
+                // adiciono a quantidade de componentes para esse componente conexo
                 list.add(vizitaVizinhoMatrizAdjacente(i));
             }
 
@@ -35,9 +41,14 @@ public class GrafoConexoMatriz {
 
     static public int vizitaVizinhoMatrizAdjacente(int atual) {
         int cont = 1;
+        // vou visitar todos os NOS
         for (int i = 0; i < ma.length; i++) {
+            // todos nao so os NOS nao VISITADOS ainda
+            // e que sejam adjacente
             if (!adjacente[i] && (ma[atual][i] < inf)) {
+                // marcar como VISITADO
                 adjacente[i] = true;
+                // vou visitar recursivamente todos os possiveis VIZINHOS dos VIZINHOS
                 cont += vizitaVizinhoMatrizAdjacente(i);
             }
         }
