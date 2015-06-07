@@ -45,8 +45,11 @@ public class Hamiltoniano {
 
     private static boolean cicloHamiltoniano(Grafo g) {
         No[] solucao = new No[g.adjacente.length];
+        // marca o primeiro NO como VISITADO
         g.no[0].visitado = true;
+        // adicionar o primeiro NO na SOLUCAO
         solucao[0] = g.no[0];
+        // achar um ciclo iniciando na SOLUCAO[0]
         boolean result = cicloHamiltonianoAux(g, solucao, 1);
         return result;
     }
