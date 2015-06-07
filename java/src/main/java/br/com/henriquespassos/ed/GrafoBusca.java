@@ -59,22 +59,40 @@ public class GrafoBusca {
     }
 
     public static int buscaLargura(No inicio, No fim) {
+        // INICIO e igual a FIM
+        // essa foi facil de mais
+        // manda uma problema mais dificil
         if (inicio == fim) {
             return 0;
         }
+        // vou utilizar uma lista para adicionar
+        // os VIZINHOS dos VIZINHOS
+        // para fazer uma busca em largura
         Deque<No> lista = new LinkedList<No>();
+        // marcar NO inicial como VISITADO
         inicio.visitado = true;
+        // a DISTANCIA atual e 0
         inicio.distancia = 0;
+        // vou visitar recursivamente todos os possiveis VIZINHOS dos VIZINHOS
         lista.add(inicio);
+        // enquanto ouver VIZINHOS dos VIZINHOS
         while (!lista.isEmpty()) {
             No aux = lista.remove();
+            // vou visitar todos os NOS
             for (int i = 0; i < aux.vizinho.length; i++) {
+                // todos nao so os NOS nao VISITADOS ainda
                 if (!aux.vizinho[i].visitado) {
+                    // achei nos VIZINHOS dos VIZINHOS o FIM
                     if (aux.vizinho[i] == fim) {
+                        // distancia do AUX + 1
+                        // (lembrando que AUX.VIZINHO[i].DISTANCIA nao foi setado ainda)
                         return aux.distancia + 1;
                     }
+                    // marcar como VISITADO
                     aux.vizinho[i].visitado = true;
+                    // atribuir a DISTANCIA percorrida ao NO VIZINHO
                     aux.vizinho[i].distancia = aux.distancia + 1;
+                    // vou visitar recursivamente todos os possiveis VIZINHOS dos VIZINHOS
                     lista.add(aux.vizinho[i]);
                 }
             }
@@ -83,13 +101,19 @@ public class GrafoBusca {
     }
 
     public static int buscaProfundidade(No atual, No fim, int visitado) {
+        // marcar como visitado
         atual.visitado = true;
+        // achei o NO que eu estava procurando
         if (atual == fim) {
             return visitado;
         }
+        // vou visitar todos os NOS
         for (int i = 0; i < atual.vizinho.length; i++) {
+            // todos nao so os NOS nao VISITADOS ainda
             if (!atual.vizinho[i].visitado) {
+                // vou visitar todos os NOS VIZINHOS do NO atual
                 int res = buscaProfundidade(atual.vizinho[i], fim, visitado + 1);
+                // se achei retorno o tempo gasto percorrido
                 if (res != -1) {
                     return res;
                 }
@@ -99,13 +123,19 @@ public class GrafoBusca {
     }
 
     public static int buscaProfundidade(No atual, No fim) {
+        // marcar como visitado
         atual.visitado = true;
+        // achei o NO que eu estava procurando
         if (atual == fim) {
             return 0;
         }
+        // vou visitar todos os NOS
         for (int i = 0; i < atual.vizinho.length; i++) {
+            // todos nao so os NOS nao VISITADOS ainda
             if (!atual.vizinho[i].visitado) {
+                // vou visitar todos os NOS VIZINHOS do NO atual
                 int res = buscaProfundidade(atual.vizinho[i], fim) + 1;
+                // se achei retorno o tempo gasto percorrido
                 if (res != 0) {
                     return res;
                 }
