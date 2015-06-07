@@ -49,6 +49,10 @@ public class Dijkstra {
                 // a[min][j] e o distancia de sair do NO selecionado de menor distancia
                 //           e chegar ao seus adjacentes
                 // a[j][0]   estou recalculando as distancias ao seus adjacentes
+
+                // e chamado de processo de relaxamento
+                // eu percorri determinados NOS e a[min][0] e o NO selecionado de menor distancia
+                // sera que eu posso melhorar a DISTANCIA de a[j][0] passando por a[min][j]
                 if (a[j][0] > a[min][0] + a[min][j]) {
                     a[j][0] = a[min][0] + a[min][j];
                 }
