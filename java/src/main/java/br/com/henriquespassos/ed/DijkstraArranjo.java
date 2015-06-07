@@ -2,6 +2,7 @@ package br.com.henriquespassos.ed;
 
 public class DijkstraArranjo {
 
+    // TODO: no futuro :)
     public static void main(String[] args) {
         Grafo g = new Grafo();
         g.a = new long[][]{
