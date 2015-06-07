@@ -1,6 +1,6 @@
 package br.com.henriquespassos.ed;
 
-public class Dijkstra {
+public class DijkstraMatriz {
 
     public static void main(String[] args) {
         long[][] a = {
@@ -14,7 +14,7 @@ public class Dijkstra {
 
         dijkstra(a);
 
-        System.out.println(Dijkstra.class.getName());
+        System.out.println(DijkstraMatriz.class.getName());
         for (int i = 0; i < a.length; i++) {
             for (int j = 0; j < a[i].length; j++) {
                 System.out.printf("%-11s", a[i][j]);
