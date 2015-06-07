@@ -3,7 +3,8 @@ package br.com.henriquespassos.ed;
 public class DijkstraArranjo {
 
     public static void main(String[] args) {
-        long[][] a = {
+        Grafo g = new Grafo();
+        g.a = new long[][]{
                 {0, 4, 2, Integer.MAX_VALUE, Integer.MAX_VALUE, Integer.MAX_VALUE},
                 {4, 0, 1, 5, Integer.MAX_VALUE, Integer.MAX_VALUE},
                 {2, 1, 0, 8, 10, Integer.MAX_VALUE},
@@ -11,13 +12,36 @@ public class DijkstraArranjo {
                 {Integer.MAX_VALUE, Integer.MAX_VALUE, 10, 2, 0, 2},
                 {Integer.MAX_VALUE, Integer.MAX_VALUE, Integer.MAX_VALUE, 6, 2, 0}
         };
+        g.visitado = new boolean[g.a.length];
+        g.no = new No[g.a.length];
 
-        dijkstra(a);
+        int[] total = new int[g.a.length];
+
+        for (int i = 0; i < g.a.length; i++) {
+            g.no[i] = new No();
+            for (int j = 0; j < g.a.length; j++) {
+                if (g.a[i][j] != Integer.MAX_VALUE) {
+                    total[i]++;
+                }
+            }
+        }
+
+        for (int i = 0; i < g.a.length; i++) {
+            g.no[i].vizinho = new No[total[i]];
+            total[i] = 0;
+            for (int j = 0; j < g.a.length; j++) {
+                if (g.a[i][j] != Integer.MAX_VALUE) {
+                    g.no[i].vizinho[total[i]++] = g.no[j];
+                }
+            }
+        }
+
+        //dijkstra(g);
 
         System.out.println(DijkstraArranjo.class.getName());
-        for (int i = 0; i < a.length; i++) {
-            for (int j = 0; j < a[i].length; j++) {
-                System.out.printf("%-11s", a[i][j]);
+        for (int i = 0; i < g.a.length; i++) {
+            for (int j = 0; j < g.a[i].length; j++) {
+                System.out.printf("%-11s", g.a[i][j]);
             }
             System.out.println();
         }
