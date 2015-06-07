@@ -27,7 +27,12 @@ public class FloydWarshall {
         for (int x = 0; x < a.length; x++) {
             for (int i = 0; i < a.length; i++) {
                 for (int j = 0; j < a.length; j++) {
+                    // se o caminho de i---j tiver uma atanho i---x---j (atanho == menor caminho)
+                    // onde exista o caminho i---x e (onde exista o caminho == caminho nao e infinito)
+                    // onde exista o caminho x---j
                     if (a[i][j] > a[i][x] + a[x][j] && a[i][x] != Integer.MAX_VALUE && a[x][j] != Integer.MAX_VALUE) {
+                        // nao tenho duvida que vou pelo atanho ;)
+                        // o caminho i---j vai ter a distancia de i---x---j
                         a[i][j] = a[i][x] + a[x][j];
                     }
                 }
