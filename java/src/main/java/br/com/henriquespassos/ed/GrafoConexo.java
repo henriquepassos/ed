@@ -141,12 +141,19 @@ public class GrafoConexo {
                 g.visitado[atual] = true;
                 // contar a quantidade de componentes conexos
                 comp++;
+                // vou visitar recursivamente todos os possiveis VIZINHOS dos VIZINHOS
                 lista.add(atual);
+                // enquanto ouver VIZINHOS dos VIZINHOS
                 while (!lista.isEmpty()) {
                     Integer aux = lista.remove();
+                    // vou visitar todos os NOS
                     for (int viz = 0; viz < g.no.length; viz++) {
+                        // todos nao so os NOS nao VISITADOS ainda
+                        // e que sejam adjacente
                         if (!g.visitado[viz] && g.adjacente[aux][viz]) {
+                            // marcar como VISITADO
                             g.visitado[viz] = true;
+                            // vou visitar recursivamente todos os possiveis VIZINHOS dos VIZINHOS
                             lista.add(viz);
                         }
                     }
@@ -194,20 +201,34 @@ public class GrafoConexo {
     // calcular componentes conexos iterativo com arranjo
     public static int compConexoItArr(Grafo g) {
         int comp = 0;
+        // vou utilizar uma lista para adicionar
+        // os VIZINHOS dos VIZINHOS
+        // para fazer uma busca em largura
         Deque<No> lista = new LinkedList<No>();
+        // vou marcar todos os NOS como nao VISITADO
         for (int i = 0; i < g.no.length; i++) {
             g.no[i].visitado = false;
         }
+        // vou visitar todos os NOS
         for (int atual = 0; atual < g.no.length; atual++) {
+            // todos nao so os NOS nao VISITADOS ainda
             if (!g.no[atual].visitado) {
+                // marcar como VISITADO
                 g.no[atual].visitado = true;
+                // contar a quantidade de componentes conexos
                 comp++;
+                // vou visitar recursivamente todos os possiveis VIZINHOS dos VIZINHOS
                 lista.add(g.no[atual]);
+                // enquanto ouver VIZINHOS dos VIZINHOS
                 while (!lista.isEmpty()) {
                     No aux = lista.remove();
+                    // vou visitar todos os NOS
                     for (int viz = 0; viz < aux.vizinho.length; viz++) {
+                        // todos nao so os NOS nao VISITADOS ainda
                         if (!aux.vizinho[viz].visitado) {
+                            // marcar como VISITADO
                             aux.vizinho[viz].visitado = true;
+                            // vou visitar recursivamente todos os possiveis VIZINHOS dos VIZINHOS
                             lista.add(aux.vizinho[viz]);
                         }
                     }
