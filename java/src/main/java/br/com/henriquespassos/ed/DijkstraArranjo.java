@@ -48,7 +48,6 @@ public class DijkstraArranjo {
     }
 
     public static void dijkstra(Grafo g) {
-        boolean[] visitado = new boolean[g.a.length];
         for (int i = 1; i < g.a.length; i++) {
             // indice da menor distancia aos adjacentes
             int min = -1;
@@ -58,7 +57,7 @@ public class DijkstraArranjo {
             for (int j = 1; j < g.a.length; j++) {
                 // todos nao so os NOS nao VISITADOS ainda
                 // que tenha distancia menor do que a menor distancia aos adjacentes
-                if (!visitado[j] && g.a[j][0] < minVal) {
+                if (!g.visitado[j] && g.a[j][0] < minVal) {
                     // atribuir indice da menor distancia aos adjacentes
                     min = j;
                     // atribuir valor da menor distancia aos adjacentes
@@ -66,7 +65,7 @@ public class DijkstraArranjo {
                 }
             }
             // marcar o valor da menor distancia como visitado
-            visitado[min] = true;
+            g.visitado[min] = true;
             // vou visitar todos os NOS
             for (int j = 1; j < g.a.length; j++) {
                 // a[min][0] e o NO selecionado de menor distancia
