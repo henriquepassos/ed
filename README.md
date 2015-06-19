@@ -1,5 +1,5 @@
 # Análise de Algoritmos e Estrutura de Dados
 
-Material pessoal para estudo da matéria Análise de Algoritmos e Estrutura de Dados ([link oficial do matéria](http://www.each.usp.br/digiampietri/SIN5013/))
+Material pessoal para estudo da matéria Análise de Algoritmos e Estrutura de Dados
 
-Obs.: O material pode conter possíveis erros
+Criado por Luciano Antonio Digiampietri ([link oficial do matéria](http://www.each.usp.br/digiampietri/SIN5013/))
